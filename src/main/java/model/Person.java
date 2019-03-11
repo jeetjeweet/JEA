@@ -10,6 +10,27 @@ public class Person {
     @GeneratedValue
     private long id;
 
+    private String name;
+    private String password;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public Person() {
+    }
+
     public long getId() {
         return id;
     }
@@ -18,7 +39,14 @@ public class Person {
         this.id = id;
     }
 
-    public Person() {
+    public Person(String name, String password) {
+        setName(name);
+        setPassword(password);
+    }
+
+    public void send(Message messageToSend){
 
     }
+
+
 }

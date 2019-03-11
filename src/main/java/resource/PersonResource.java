@@ -9,7 +9,7 @@ import javax.ws.rs.*;
 import java.util.List;
 
 @Stateless
-@Path("person")
+@Path("Person")
 public class PersonResource {
 
     @Inject
