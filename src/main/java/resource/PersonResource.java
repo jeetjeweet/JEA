@@ -20,6 +20,11 @@ public class PersonResource {
     public List<Person> all() {
         return null;
     }
+//    @GET
+//    @Produces("application/json")
+//    public Person getPerson() {
+//        return personDao.get
+//    }
 
     @POST
     @Consumes("application/json")

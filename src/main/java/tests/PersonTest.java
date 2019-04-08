@@ -16,18 +16,26 @@ public class PersonTest {
     @Rule
     public WireMockRule wiremockRule = new WireMockRule(8888);
 
-//    @Test
-//    public void testSend() {
-//        wiremock = new WireMock(port);
-//        wiremock.register(post(urlEqualTo("/Person"))
-//                .withRequestBody(containing("henk"))
-//                .willReturn(aResponse()
-//                        .withStatus(200)
-//                        .withBody("0")));
-//        Person henk = new Person("henk","henk123");
-//        henk.send(new Message("jojo"));
-//        wiremock.verifyThat(WireMock.postRequestedFor(urlEqualTo("/Person")));
-//    }
+    @Test
+    public void testSendMessage() {
+        wiremock = new WireMock(port);
+        wiremock.register(post(urlEqualTo("/Person"))
+                .withRequestBody(containing("henk"))
+                .willReturn(aResponse()
+                        .withStatus(200)
+                        .withBody("0")));
+        Person henk = new Person("henk","henk123");
+        Message message = new Message("jojo");
+        henk.send(message);
+
+        given()
+                .port(port)
+                .contentType("application/json")
+                .body(message)
+                .when().post("/Person").then()
+                .statusCode(200);
+        wiremock.verifyThat(WireMock.postRequestedFor(urlEqualTo("/Person")));
+    }
 
     @Test
     public void testAddPerson() {

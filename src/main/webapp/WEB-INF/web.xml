@@ -3,5 +3,28 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Protected resources</web-resource-name>
+            <url-pattern>/admin</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>ADMIN</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>file</realm-name>
+    </login-config>
+
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+            <scripting-invalid>true</scripting-invalid>
+        </jsp-property-group>
+    </jsp-config>
 </web-app>
 

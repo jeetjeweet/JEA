@@ -14,6 +14,7 @@ public class PersonDAO {
     public void save(Person person){
         entityManager.persist(person);
     }
+
     public void update(Person person) {
         entityManager.merge(person);
     }

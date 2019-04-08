@@ -19,4 +19,9 @@ public class PersonController extends HttpServlet {
         Person newPerson = new Person(request.getParameter("name"), request.getParameter("password"));
         personDAO.save(newPerson);
     }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+        request.getRequestDispatcher("home.jsp");
+    }
 }

@@ -7,14 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70217795-9a70-47bb-a262-5d07b8c9075a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chatturbait.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chatturbait.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PersonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PersonDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resource/PersonResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resource/PersonResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tests/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Chatturbait/WEB-INF/classes/dao/PersonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Chatturbait/WEB-INF/classes/dao/PersonDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Chatturbait/WEB-INF/classes/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Chatturbait/WEB-INF/classes/model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Chatturbait/WEB-INF/classes/resource/PersonResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Chatturbait/WEB-INF/classes/resource/PersonResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Chatturbait/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Chatturbait/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Chatturbait/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Chatturbait/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/PersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/PersonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/PersonDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Person.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resource/PersonResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resource/PersonResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/PersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PersonTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,69 +37,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="221">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resource/GroupResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tests/PersonTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Message.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/adminOnly.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              <folding>
-                <element signature="e#98#99#0" expanded="true" />
-                <element signature="e#124#125#0" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resource/PersonResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/PersonDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -94,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="282">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,24 +101,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Person.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+            <state relative-caret-position="248">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tests/PersonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,6 +129,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -143,16 +141,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/dao/PersonDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/resource/PersonResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/PersonDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/TestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/PersonController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Person.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tests/PersonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/PersonDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resource/PersonResource.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Group.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Groep.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/GroupDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resource/GroupResource.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/PersonController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/adminOnly.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -171,9 +177,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="1650" />
-    <option name="height" value="1039" />
+    <option name="x" value="685" />
+    <option name="y" value="35" />
+    <option name="width" value="975" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,7 +189,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,17 +254,44 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Chatturbait" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatturbait" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatturbait" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatturbait" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatturbait" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatturbait" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552302966104" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Testproject" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554188707924" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -283,7 +316,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PersonTest">
+  <component name="RunManager" selected="GlassFish Server.Payara - GlassFish 5.184.0">
     <configuration name="Payara - GlassFish 5.184.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.184.0" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -297,7 +330,7 @@
         <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="" />
+        <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="GlassFish" />
       <RunnerSettings RunnerId="Debug">
@@ -390,7 +423,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551356282237</updated>
-      <workItem from="1551356287579" duration="10749000" />
+      <workItem from="1551356287579" duration="10950000" />
+      <workItem from="1552565659956" duration="6670000" />
+      <workItem from="1553501215707" duration="4075000" />
+      <workItem from="1553507273771" duration="9503000" />
+      <workItem from="1554105197645" duration="8064000" />
+      <workItem from="1554706957685" duration="634000" />
+      <workItem from="1554710696130" duration="3379000" />
     </task>
     <servers />
   </component>
@@ -401,9 +440,15 @@
     <history-entry file="PersonTest - 2019.03.11 at 09h 25m 54s.xml">
       <configuration name="PersonTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PersonTest - 2019.03.11 at 12h 16m 20s.xml">
+      <configuration name="PersonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest - 2019.03.14 at 14h 04m 43s.xml">
+      <configuration name="PersonTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10749000" />
+    <option name="totallyTimeSpent" value="43275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -415,7 +460,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.19060403" />
       <window_info id="Designer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3286119" />
@@ -427,8 +472,8 @@
       <window_info anchor="bottom" id="Messages" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.47733712" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.46033993" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -451,15 +496,92 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#98#99#0" expanded="true" />
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/PersonDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Groep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/PersonResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/GroupDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/GroupResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -473,96 +595,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/PersonDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/PersonResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#98#99#0" expanded="true" />
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="-596">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/PersonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+        <state relative-caret-position="-7">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/adminOnly.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
