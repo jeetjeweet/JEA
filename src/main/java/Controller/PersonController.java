@@ -1,27 +1,29 @@
 package Controller;
 
 import dao.PersonDAO;
+import jwt.Role;
 import model.Person;
 
-import javax.ejb.EJB;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.inject.Inject;
+import javax.ws.rs.*;
 
-@WebServlet(urlPatterns = "/Person")
-public class PersonController extends HttpServlet {
-    @EJB
+@Path("/Person")
+public class PersonController {
+    @Inject
     private PersonDAO personDAO;
 
-    @Override
-    protected void doPut(HttpServletRequest request, HttpServletResponse response){
-        Person newPerson = new Person(request.getParameter("name"), request.getParameter("password"));
+    @POST
+    public void addPerson(@FormParam("name") String name, @FormParam("password") String password){
+        Person newPerson = new Person(name, password);
+        newPerson.setRole(Role.User);
+        System.out.println("addPerson " + name + " pw: " + password);
         personDAO.save(newPerson);
     }
 
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-        request.getRequestDispatcher("home.jsp");
+    @GET
+    @Path("/authKey")
+    @Produces("application/json")
+    public void generateGoogleAuthKey(){
+
     }
 }

@@ -1,5 +1,8 @@
 package model;
 
+
+import jwt.Role;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
@@ -18,9 +21,11 @@ public class Person {
     @NotNull
     private String name;
     private String password;
-
+    private Role role;
     @Email(message = "Enter valid email")
     private String email;
+
+    private String authenticationKey;
 
     @ManyToMany(mappedBy = "friendslist")
     private List<Groep> groepList = new ArrayList<>();
@@ -75,5 +80,21 @@ public class Person {
 
     public void setGroepList(List<Groep> groepList) {
         this.groepList = groepList;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public String getAuthenticationKey() {
+        return authenticationKey;
+    }
+
+    public void setAuthenticationKey(String authenticationKey) {
+        this.authenticationKey = authenticationKey;
     }
 }

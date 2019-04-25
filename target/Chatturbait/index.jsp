@@ -1,7 +1,7 @@
 <html>
     <body>
         <h2>Hello World!</h2>
-        <form action="${pageContext.request.contextPath}/Person" method="put">
+        <form action="${pageContext.request.contextPath}/User" method="put">
             Name<input type="text" name="nameInput"/>
             Password <input type="password" name="passwordInput"/>
             <input type="submit" value="Enter"/>

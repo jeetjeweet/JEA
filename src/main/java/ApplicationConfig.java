@@ -1,4 +1,6 @@
-import resource.PersonResource;
+import Controller.PersonController;
+import filter.CorsFilter;
+import jwt.AuthenticationController;
 
 import javax.ws.rs.core.Application;
 import java.util.Set;
@@ -14,6 +16,8 @@ public class ApplicationConfig extends Application {
     }
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(PersonResource.class);
+        resources.add(CorsFilter.class);
+        resources.add(PersonController.class);
+        resources.add(AuthenticationController.class);
     }
 }
