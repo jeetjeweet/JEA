@@ -25,7 +25,7 @@ public class PersonTest {
                         .withStatus(200)
                         .withBody("0")));
         Person henk = new Person("henk","henk123");
-        Message message = new Message("jojo");
+        Message message = new Message("jojo", henk.getName());
         henk.send(message);
 
         given()

@@ -2,6 +2,7 @@ package jwt;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.warrenstrange.googleauth.GoogleAuthenticator;
 import dao.PersonDAO;
 import model.Person;
 
@@ -24,47 +25,45 @@ public class AuthenticationController {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public Response checkCredentials(@FormParam("name") String name, @FormParam("password") String password) {
+    public Response checkCredentials(@FormParam("name") String name,
+                                     @FormParam("password") String password,
+                                     @FormParam("authCode") String authCode) {
         try{
             System.out.println(name + " " + password);
             Person person = personDAO.findOne(name,password);
+            if((person.getAuthenticationKey() == null) || decodeAuthenticationKey(authCode, person)){
+                String token = generateToken(person);
 
-            String token = generateToken(person);
-
-            response.setHeader("token", token);
-
-            return Response.ok().header("token", token).build();
+                return Response.ok(token).build();
+            }
+            else{
+                return Response.status(403).build();
+            }
 
         }catch (Exception e){
             e.printStackTrace();
             return Response.status(403).build();
         }
     }
-
-//    @Override
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response){
-//        try{
-//            String name = request.getParameter("name");
-//            String password = request.getParameter("password");
-//
-//            Person person = personDAO.findOne(name,password);
-//
-//            String token = generateToken(person);
-//            response.setHeader("token", token);
-//
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
-//    }
+    //valideert of de ingevoerde code hoort bij de key
+    private boolean decodeAuthenticationKey(String code, Person person){
+        GoogleAuthenticator gAuth = new GoogleAuthenticator();
+        return gAuth.authorize(person.getAuthenticationKey(),Integer.parseInt(code));
+    }
 
     private String generateToken(Person person){
         try{
             Algorithm algorithm = Algorithm.HMAC256("DitIsGeenSecret");
+            String authkey = person.getAuthenticationKey();
+            if(authkey == null){
+                authkey = "";
+            }
             String token = JWT.create()
                     .withIssuer(person.getName())
                     .withClaim("username",person.getName())
                     .withClaim("ID",person.getId())
                     .withClaim("Roles" , String.valueOf(person.getRole()))
+                    .withClaim("authenticationKey", authkey)
                     .withExpiresAt(new Date(System.currentTimeMillis() + (5 * 60 * 1000)))
                     .sign(algorithm);
             return token;

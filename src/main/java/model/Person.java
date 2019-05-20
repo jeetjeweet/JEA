@@ -12,7 +12,8 @@ import java.util.List;
 @Entity
 @NamedQueries({
         @NamedQuery(name = "Person.findOne", query = "select p from model.Person p where p.name = :name and p.password = :password"),
-        @NamedQuery(name = "Person.getAll", query = "select p from model.Person p")
+        @NamedQuery(name = "Person.getAll", query = "select p from model.Person p"),
+        @NamedQuery(name = "Person.getByID", query = "select p from model.Person p where p.id = :id")
 })
 public class Person {
     @Id
@@ -27,7 +28,7 @@ public class Person {
 
     private String authenticationKey;
 
-    @ManyToMany(mappedBy = "friendslist")
+    @ManyToMany(mappedBy = "friendslist",fetch = FetchType.EAGER)
     private List<Groep> groepList = new ArrayList<>();
 
     public String getName() {

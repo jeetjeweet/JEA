@@ -11,6 +11,7 @@ public class GroupDAO {
     @PersistenceContext
     private EntityManager entityManager;
 
+    // groep object opslaan
     public void save(Groep groep){
         entityManager.persist(groep);
     }
