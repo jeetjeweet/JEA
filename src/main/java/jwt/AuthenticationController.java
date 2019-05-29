@@ -5,6 +5,7 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.warrenstrange.googleauth.GoogleAuthenticator;
 import dao.PersonDAO;
 import model.Person;
+import model.SHAExample;
 
 import javax.ejb.EJB;
 import javax.servlet.http.HttpServletResponse;
@@ -29,9 +30,15 @@ public class AuthenticationController {
     public Response checkCredentials(@FormParam("name") String name,
                                      @FormParam("password") String password,
                                      @FormParam("authCode") String authCode) {
+
+
         try{
+            Person person;
             System.out.println(name + " " + password);
-            Person person = personDAO.findOne(name,password);
+            String hashedpw = SHAExample.get_SHA_256_SecurePassword(password);
+            System.out.println(hashedpw);
+            person = personDAO.findOne(name, hashedpw);
+
             if((person.getAuthenticationKey() == null) || decodeAuthenticationKey(authCode, person)){
                 String token = generateToken(person);
                 String responsestring = "token:" + token + "| user:" + name;

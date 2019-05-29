@@ -59,7 +59,11 @@ public class Person {
         setName(name);
         setPassword(password);
     }
-
+    public Person(String name, String password, String email){
+        setName(name);
+        setPassword(password);
+        setEmail(email);
+    }
     public void send(Message messageToSend){
 
     }

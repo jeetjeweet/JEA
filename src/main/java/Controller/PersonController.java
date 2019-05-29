@@ -5,6 +5,7 @@ import dao.PersonDAO;
 import jwt.JWT;
 import model.Role;
 import model.Person;
+import model.SHAExample;
 
 import javax.ejb.EJB;
 import javax.ws.rs.*;
@@ -20,7 +21,7 @@ public class PersonController {
     @EJB
     private PersonDAO personDAO;
 
-    @JWT(Permissions = Role.User)
+    @JWT(Permissions = {Role.User, Role.Admin})
     @GET
     @Path("/getSelf")
     public Person getSelf(@Context HttpHeaders headers) throws UnsupportedEncodingException {
@@ -36,14 +37,15 @@ public class PersonController {
 
     @JWT(Permissions = Role.Admin)
     @POST
-    public void addPerson(@FormParam("name") String name, @FormParam("password") String password){
-        Person newPerson = new Person(name, password);
+    public void addPerson(@FormParam("name") String name, @FormParam("password") String password, @FormParam("email") String email){
+        Person newPerson = new Person(name, password, email);
         newPerson.setRole(Role.User);
-        System.out.println("addPerson " + name + " pw: " + password);
+        newPerson.setPassword(SHAExample.get_SHA_256_SecurePassword(password));
+        System.out.println("addPerson " + newPerson.getName() + " pw: " + newPerson.getPassword() + " email: " + newPerson.getEmail());
         personDAO.save(newPerson);
     }
 
-    @JWT(Permissions = Role.User)
+    @JWT(Permissions = {Role.User, Role.Admin})
     @GET
     @Path("/getAll")
     @Produces(MediaType.APPLICATION_JSON)
@@ -51,7 +53,7 @@ public class PersonController {
         return personDAO.getAll();
     }
 
-    @JWT(Permissions = Role.User)
+    @JWT(Permissions = {Role.User, Role.Admin})
     @GET
     @Path("/authKey")
     @Produces(MediaType.APPLICATION_JSON)
