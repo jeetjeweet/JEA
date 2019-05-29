@@ -14,6 +14,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Date;
 
+
 @Path("/authentication")
 public class AuthenticationController {
     @EJB
@@ -33,8 +34,8 @@ public class AuthenticationController {
             Person person = personDAO.findOne(name,password);
             if((person.getAuthenticationKey() == null) || decodeAuthenticationKey(authCode, person)){
                 String token = generateToken(person);
-
-                return Response.ok(token).build();
+                String responsestring = "token:" + token + "| user:" + name;
+                return Response.ok(responsestring).build();
             }
             else{
                 return Response.status(403).build();
@@ -59,11 +60,12 @@ public class AuthenticationController {
                 authkey = "";
             }
             String token = JWT.create()
-                    .withIssuer(person.getName())
+                    .withIssuer("Chatturbait")
                     .withClaim("username",person.getName())
                     .withClaim("ID",person.getId())
                     .withClaim("Roles" , String.valueOf(person.getRole()))
                     .withClaim("authenticationKey", authkey)
+                    .withIssuedAt(new Date(System.currentTimeMillis()))
                     .withExpiresAt(new Date(System.currentTimeMillis() + (5 * 60 * 1000)))
                     .sign(algorithm);
             return token;

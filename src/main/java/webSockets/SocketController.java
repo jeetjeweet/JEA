@@ -3,7 +3,6 @@ package webSockets;
 import com.google.gson.Gson;
 import model.Message;
 
-import javax.faces.bean.ApplicationScoped;
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
@@ -12,8 +11,7 @@ import java.util.HashMap;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-@ApplicationScoped
-@ServerEndpoint("/chat/")
+@ServerEndpoint("/chat")
 public class SocketController {
     private Session session;
     private static Gson gson = new Gson();
@@ -37,6 +35,7 @@ public class SocketController {
     @OnMessage
     public void onMessage(Session session, Message message) throws IOException, EncodeException {
         // Handle new messages
+        System.out.println("in onmessage socketcontroller : " + message.toString());
         message.setCreator(users.get(session.getId()));
         broadcast(message);
     }

@@ -1,8 +1,6 @@
 package model;
 
 
-import jwt.Role;
-
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
@@ -22,7 +20,7 @@ public class Person {
     @NotNull
     private String name;
     private String password;
-    private Role role;
+    private model.Role role;
     @Email(message = "Enter valid email")
     private String email;
 
@@ -83,11 +81,11 @@ public class Person {
         this.groepList = groepList;
     }
 
-    public Role getRole() {
+    public model.Role getRole() {
         return role;
     }
 
-    public void setRole(Role role) {
+    public void setRole(model.Role role) {
         this.role = role;
     }
 
